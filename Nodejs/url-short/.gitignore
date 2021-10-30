@@ -1,2 +1,4 @@
 node_modules/
 dist/
+
+# mongodb+srv://dio:<password>@cluster0.riib9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
