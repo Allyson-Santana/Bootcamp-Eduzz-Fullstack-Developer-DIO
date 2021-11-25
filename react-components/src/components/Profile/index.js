@@ -1,5 +1,5 @@
-import * as Styled from './style';
 import React from 'react';
+import * as Styled from './style';
 import userGithub from '../../hooks/UserGithub';
 
 console.log(userGithub);

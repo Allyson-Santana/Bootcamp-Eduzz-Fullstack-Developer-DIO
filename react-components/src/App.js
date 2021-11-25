@@ -7,9 +7,9 @@ import {
 } from './components';
 import UserGithub from './hooks/UserGithub';
 
-function App() {
+const App = () => {
 
-  const { githubState } = UserGithub();
+const { githubState } = UserGithub();
 
   return (
     <Layout>

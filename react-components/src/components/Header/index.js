@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import * as Styled from './style';
 import userGithub from '../../hooks/UserGithub';
-import styled from "styled-components";
+
 
 const Header = () => {
     const { getUser } = userGithub();
@@ -14,7 +14,7 @@ const Header = () => {
 
     return(
         <header>
-            <styled.Wrapper>
+            <Styled.Wrapper>
                 <input
                     type="text"
                     placeholder="Digite o username para pesquisa..."
@@ -25,10 +25,9 @@ const Header = () => {
                 <span>Buscar</span>
                 </button>
 
-            </styled.Wrapper>
+            </Styled.Wrapper>
         </header>
     );
 }
 
 export default Header;
-

@@ -30,7 +30,7 @@ export const Repositories = () => {
           </Styled.WrapperTabList>
           <Styled.WrapperTabPanel>
             <Styled.WrapperList>
-              {githubState.repositorieStyled.map((item) => (
+              {githubState.repositories.map((item) => (
                 <RepositoryItem
                   key={item.id}
                   name={item.name}
