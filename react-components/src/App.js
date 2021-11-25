@@ -1,11 +1,36 @@
-
-import {Layout, Profile, Repositories} from './components';
+import React from 'react';
+import {
+  Layout, 
+  Profile, 
+  Repositories,
+  NoSearch
+} from './components';
+import UserGithub from './hooks/UserGithub';
 
 function App() {
+
+  const { githubState } = UserGithub();
+
   return (
-    <Layout className="App">
-      <Profile />
-      <Repositories />
+    <Layout>
+      {githubState.hasUser ? (
+        <>
+          {
+            githubState.loading ? (
+              <p>Loading</p>
+            ) : (
+              <>
+                <Profile />
+                <Repositories />
+              </>
+            )
+          }
+        </>
+      ) : (
+        <NoSearch />
+      )
+
+      }
     </Layout>
   );
 }

@@ -1,11 +1,5 @@
-import Styled from 'styled-components';
+import styled from "styled-components";
 
-
-const MainLayout = Styled.div`
-    flex: 1;
+export const WrapperLayout = styled.section`
+  margin: 16px;
 `;
-
-
-export {
-    MainLayout
-}

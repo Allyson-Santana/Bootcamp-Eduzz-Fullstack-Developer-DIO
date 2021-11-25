@@ -1,12 +1,14 @@
+import React from 'react';
 import * as Styled from './style';
+import Header from '../Header';
 
 export const Layout = ({children}) => {
 
-    return(
-        <Styled.MainLayout>
-            components Layouts
+    return (
+        <Styled.WrapperLayout>
+            <Header />
             { children }
-        </Styled.MainLayout>
+        </Styled.WrapperLayout>
     );
 
 }
